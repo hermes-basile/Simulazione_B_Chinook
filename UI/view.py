@@ -30,6 +30,7 @@ class View(ft.UserControl):
 
         # riga 1: punto 1
         self._ddPaese = ft.Dropdown(label="Paese")
+        self._controller.fill_DD()
         self._btnCreaGrafo = ft.ElevatedButton(text="Crea grafo",
                                               on_click=self._controller.handleCreaGrafo)
         self._btnStampaInfo = ft.ElevatedButton(text="Stampa Info",
